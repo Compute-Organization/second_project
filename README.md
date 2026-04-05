@@ -1,4 +1,4 @@
-# ⚙️ pd ua_alu_project
+# ⚙️ Technologies
 
 ![HDL](https://img.shields.io/badge/HDL-Verilog-blue)
 ![Quartus](https://img.shields.io/badge/Quartus-II%2013.1-007ACC)
