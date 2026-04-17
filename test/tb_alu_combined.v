@@ -1,6 +1,7 @@
 `timescale 1 ns / 1 ps
 
 module tb_alu_combined;
+
     reg        clk_tb;
     reg        rst_tb;
     reg        enaf_next;
@@ -59,6 +60,9 @@ module tb_alu_combined;
     end
 
     always @(posedge clk_tb)
+        $display("%0t ns -> POSedge clk_tb | A=%h B=%h selop=%b shamt=%b enaf=%b | busC=%h C=%b N=%b P=%b Z=%b",
+                 $time, busA_tb, busB_tb, selop_tb, shamt_tb, enaf_tb, busC_tb, C_tb, N_tb, P_tb, Z_tb);
+
     task queue_case;
         input [7:0] a_in;
         input [7:0] b_in;
